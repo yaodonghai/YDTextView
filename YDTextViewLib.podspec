@@ -24,8 +24,7 @@ Pod::Spec.new do |spec|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = <<-DESC
-                   DESC
+  spec.description  = "这是一个自定义 TextView "
 
   spec.homepage     = "https://github.com/yaodonghai/YDTextView"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -90,8 +89,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files = 'YDTextViewClass/*'
-   # spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  #s.source_files = 'YDTextViewClass/*'
+  spec.source_files  = "YDTextViewClass", "YDTextViewClass/**/*.{h,m}"
   #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -131,8 +130,10 @@ Pod::Spec.new do |spec|
   #  you can include multiple dependencies to ensure it works.
 
    spec.requires_arc = true
+   spec.frameworks = 'UIKit','Foundation'
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
+
 
 end
