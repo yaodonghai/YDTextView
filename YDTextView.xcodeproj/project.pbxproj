@@ -16,6 +16,7 @@
 		E36925BE2611E74700FBB1A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E36925BD2611E74700FBB1A3 /* main.m */; };
 		E36925C82611E74700FBB1A3 /* YDTextViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E36925C72611E74700FBB1A3 /* YDTextViewTests.m */; };
 		E36925D32611E74700FBB1A3 /* YDTextViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E36925D22611E74700FBB1A3 /* YDTextViewUITests.m */; };
+		E36925E62611E8DD00FBB1A3 /* YDTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E36925E52611E8DD00FBB1A3 /* YDTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		E36925CE2611E74700FBB1A3 /* YDTextViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YDTextViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E36925D22611E74700FBB1A3 /* YDTextViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDTextViewUITests.m; sourceTree = "<group>"; };
 		E36925D42611E74700FBB1A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E36925E42611E8DD00FBB1A3 /* YDTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YDTextView.h; path = YDTextViewClass/YDTextView.h; sourceTree = SOURCE_ROOT; };
+		E36925E52611E8DD00FBB1A3 /* YDTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = YDTextView.m; path = YDTextViewClass/YDTextView.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 		E369259F2611E74500FBB1A3 = {
 			isa = PBXGroup;
 			children = (
+				E36925E32611E8C100FBB1A3 /* YDTextViewClass */,
 				E36925AA2611E74500FBB1A3 /* YDTextView */,
 				E36925C62611E74700FBB1A3 /* YDTextViewTests */,
 				E36925D12611E74700FBB1A3 /* YDTextViewUITests */,
@@ -135,6 +139,15 @@
 				E36925D42611E74700FBB1A3 /* Info.plist */,
 			);
 			path = YDTextViewUITests;
+			sourceTree = "<group>";
+		};
+		E36925E32611E8C100FBB1A3 /* YDTextViewClass */ = {
+			isa = PBXGroup;
+			children = (
+				E36925E42611E8DD00FBB1A3 /* YDTextView.h */,
+				E36925E52611E8DD00FBB1A3 /* YDTextView.m */,
+			);
+			path = YDTextViewClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +282,7 @@
 				E36925B32611E74500FBB1A3 /* ViewController.m in Sources */,
 				E36925AD2611E74500FBB1A3 /* AppDelegate.m in Sources */,
 				E36925BE2611E74700FBB1A3 /* main.m in Sources */,
+				E36925E62611E8DD00FBB1A3 /* YDTextView.m in Sources */,
 				E36925B02611E74500FBB1A3 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
